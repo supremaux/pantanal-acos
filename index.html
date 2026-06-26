@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantanal Aços | Catálogo de Alta Performance</title>
+    <!-- Fonte Inter -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                900: "#064e3b" /* Verde escuro industrial */,
+                700: "#047857",
+                600: "#059669",
+                500: "#10b981",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-zinc-50 text-zinc-800 antialiased">
+    <!-- Topbar Comercial -->
+    <div
+      class="bg-zinc-900 text-zinc-300 text-xs py-2 px-4 sticky top-0 z-50 shadow-sm border-b border-zinc-800"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2"
+      >
+        <div class="flex items-center gap-4">
+          <<span class="flex items-center gap-1"
+            ><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i>
+            Vila Albuquerque, Campo Grande - MS</span
+          >
+          <span class="hidden md:flex items-center gap-1"
+            ><i data-lucide="phone" class="w-3.5 h-3.5 text-brand-500"></i> (67)
+            3388-9018</span
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <span
+            class="bg-brand-900 text-brand-500 border border-brand-700/50 px-2 py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase animate-pulse"
+            >Atendimento Direto: Osmar</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header
+      class="bg-brand-600 backdrop-blur-md border-b border-zinc-200 py-4 px-4 sticky top-8 z-40"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <!-- Logo em formato avif -->
+          <img
+            src="./logo.avif"
+            alt="Pantanal Aços"
+            class="w-32 h-auto"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+        <nav
+          class="hidden md:flex items-center gap-6 font-medium text-sm text-white"
+        >
+          <a href="#produtos" class="hover:text-brand-700 transition"
+            >Produtos</a
+          >
+          <a href="#servicos" class="hover:text-brand-700 transition"
+            >Oxicorte & Plasma</a
+          >
+          <a href="#contato" class="hover:text-brand-700 transition"
+            >Localização</a
+          >
+        </nav>
+        <a
+          href="https://wa.me/556733889018?text=Olá Osmar, vim pelo site e gostaria de um orçamento."
+          target="_blank"
+          class="bg-brand-700 hover:bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition shadow-sm shadow-brand-700/20"
+        >
+          <i data-lucide="message-square" class="w-4 4-4"></i> Falar com Osmar
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-zinc-900 text-white py-24 px-4 overflow-hidden">
+      <div class="absolute inset-0 opacity-90 mix-blend-multiply">
+        <img
+          src="./featured.avif"
+          alt="Metalworking"
+          class="w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </div>
+      <div
+        class="max-w-7xl mx-auto relative z-10 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <span
+            class="bg-brand-700/30 text-brand-500 border border-brand-500/30 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase inline-block mb-4"
+            >Estrutura Própria em Campo Grande</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4"
+          >
+            A força do aço com a precisão que seu projeto exige.
+          </h2>
+          <p class="text-zinc-400 text-lg mb-8 max-w-xl">
+            Distribuição de ferro e aço estrutural com serviço especializado de
+            corte sob medida em Oxicorte e Plasma de alta definição.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#produtos"
+              class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 transition shadow-lg shadow-brand-600/30"
+            >
+              Ver Catálogo Digital
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-zinc-900/80 backdrop-blur border border-zinc-800 p-6 rounded-2xl"
+          >
+            <div class="text-brand-500 mb-2">
+              <i data-lucide="zap" class="w-8 h-8"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-1">Corte Plasma</h3>
+            <p class="text-xs text-zinc-400">
+              Precisão milimétrica e acabamento superior para chapas sob medida.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-900/80 backdrop-blur border border-zinc-800 p-6 rounded-2xl"
+          >
+            <div class="text-brand-500 mb-2">
+              <i data-lucide="flame" class="w-8 h-8"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-1">Oxicorte</h3>
+            <p class="text-xs text-zinc-400">
+              Capacidade para cortes pesados em grandes espessuras de aço.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de Produtos -->
+    <section id="produtos" class="py-20 px-4 max-w-7xl mx-auto">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold tracking-tight text-zinc-900">
+          Nosso Catálogo de Produtos
+        </h2>
+        <p class="text-zinc-500 mt-2">
+          Clique em qualquer item para ver especificações e solicitar cotação
+          direto no WhatsApp do Osmar.
+        </p>
+      </div>
+
+      <!-- Grid de Produtos -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="product-grid">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </section>
+
+    <!-- Rodapé/Contato -->
+    <footer
+      id="contato"
+      class="bg-zinc-900 text-zinc-400 py-12 px-4 border-t border-zinc-800"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-white font-bold text-lg mb-4">Pantanal Aços</h3>
+          <p class="text-sm">
+            Desde 2011 fornecendo o melhor em ferro, aço e serviços de corte
+            industrial em Mato Grosso do Sul.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-base mb-4">Sede Própria</h3>
+          <p class="text-sm flex items-start gap-2">
+            <i
+              data-lucide="map-pin"
+              class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"
+            ></i>
+            Rua Cristalina, 411<br />Vila Albuquerque, Campo Grande - MS<br />CEP:
+            79060-280
+          </p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-base mb-4">Contato Comercial</h3>
+          <p class="text-sm flex items-center gap-2 mb-2">
+            <i data-lucide="phone" class="w-4 h-4 text-brand-500"></i> (67)
+            3388-9018
+          </p>
+          <p class="text-sm flex items-center gap-2 text-brand-500 font-medium">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Vendedor
+            Responsável: Osmar
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL DO PRODUTO -->
+    <div
+      id="product-modal"
+      class="fixed inset-0 bg-zinc-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden"
+    >
+      <div
+        class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl border border-zinc-200 transform scale-95 transition-all duration-300"
+        id="modal-content"
+      >
+        <div class="relative h-64 bg-zinc-900">
+          <img
+            id="modal-img"
+            src=""
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <button
+            onclick="closeModal()"
+            class="absolute top-4 right-4 bg-zinc-950/60 hover:bg-zinc-950/80 text-white p-2 rounded-full backdrop-blur transition"
+          >
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="p-6">
+          <span
+            id="modal-category"
+            class="text-xs font-bold text-brand-700 tracking-wider uppercase"
+          ></span>
+          <h3
+            id="modal-title"
+            class="text-2xl font-bold text-zinc-900 mt-1 mb-3"
+          ></h3>
+          <p
+            id="modal-desc"
+            class="text-zinc-600 text-sm mb-6 leading-relaxed"
+          ></p>
+
+          <div class="bg-zinc-50 border border-zinc-200 rounded-xl p-4 mb-6">
+            <h4
+              class="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-2"
+            >
+              Especificações Comuns
+            </h4>
+            <ul class="text-xs text-zinc-700 space-y-1.5" id="modal-specs">
+              <!-- Injetado via JS -->
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-zinc-100 pt-4"
+          >
+            <div class="text-center sm:text-left">
+              <span class="text-xs text-zinc-400 block"
+                >Atendimento exclusivo</span
+              >
+              <span
+                class="text-sm font-semibold text-zinc-800 flex items-center gap-1"
+                ><span
+                  class="w-2 h-2 rounded-full bg-emerald-500 inline-block"
+                ></span>
+                Vendedor Osmar Online</span
+              >
+            </div>
+            <a
+              id="modal-whatsapp-btn"
+              href=""
+              target="_blank"
+              class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-600/20"
+            >
+              <i data-lucide="message-square" class="w-5 h-5"></i> Solicitar
+              Orçamento com Osmar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script de Dados e Lógica do Protótipo -->
+    <script>
+      const produtos = [
+        {
+          id: 1,
+          title: "Tarugos de Aço Sob Medida",
+          category: "Tarugos",
+          desc: "Tarugos de alta qualidade cortados com precisão industrial em nossa própria sede. Perfeitos para usinagem, fabricação de eixos, engrenagens e componentes mecânicos pesados.",
+          image: "./tarugo.avif",
+          specs: [
+            "Normas: SAE 1020 / SAE 1045",
+            "Formatos: Redondos, Quadrados e Sextavados",
+            "Corte: Plasma e Oxicorte sob desenho técnico",
+          ],
+        },
+        {
+          id: 2,
+          title: "Chapas de Aço Carbono",
+          category: "Chapas",
+          desc: "Chapas grossas e finas prontas para aplicação estrutural e industrial. Alta resistência mecânica e uniformidade garantida com certificado de qualidade de fábrica.",
+          image: "./chapas.avif",
+          specs: [
+            "Espessuras: Sob consulta",
+            "Aplicações: Naval, Civil e Industrial",
+            "Acabamento: Natural ou Galvanizado",
+          ],
+        },
+        {
+          id: 3,
+          title: "Corte de Chapas em Oxicorte e Plasma",
+          category: "Serviços Especializados",
+          desc: "Tecnologia de ponta para entregar a geometria exata que sua empresa precisa. Otimização de retalhos para garantir o melhor custo-benefício por tonelada de aço cortada.",
+          image: "./plasma.avif",
+          specs: [
+            "Capacidade Plasma: Cortes limpos em alta definição",
+            "Capacidade Oxicorte: Espessuras robustas industriais",
+            "Envio de arquivos: DXF / DWG aceitos",
+          ],
+        },
+      ];
+
+      function renderProducts() {
+        const grid = document.getElementById("product-grid");
+        grid.innerHTML = produtos
+          .map(
+            (p) => `
+                <div class="bg-white rounded-2xl overflow-hidden border border-zinc-200 hover:border-brand-500/50 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer" onclick="openModal(${p.id})">
+                    <div class="h-48 bg-zinc-100 overflow-hidden relative">
+                        <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur text-white text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-md border border-zinc-700">${p.category}</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-zinc-900 group-hover:text-brand-700 transition line-clamp-1">${p.title}</h3>
+                        <p class="text-zinc-500 text-xs mt-1.5 line-clamp-2">${p.desc}</p>
+                        <div class="flex items-center justify-between mt-4 pt-4 border-t border-zinc-100">
+                            <span class="text-xs text-brand-600 font-semibold flex items-center gap-1">Ver detalhes <i data-lucide="chevron-right" class="w-3 h-3"></i></span>
+                            <span class="text-[10px] text-zinc-400 bg-zinc-100 px-2 py-0.5 rounded font-medium">Orçamento com Osmar</span>
+                        </div>
+                    </div>
+                </div>
+            `,
+          )
+          .join("");
+        lucide.createIcons();
+      }
+
+      function openModal(id) {
+        const p = produtos.find((item) => item.id === id);
+        if (!p) return;
+
+        document.getElementById("modal-img").src = p.image;
+        document.getElementById("modal-img").alt = p.title;
+        document.getElementById("modal-category").innerText = p.category;
+        document.getElementById("modal-title").innerText = p.title;
+        document.getElementById("modal-desc").innerText = p.desc;
+
+        const specsList = document.getElementById("modal-specs");
+        specsList.innerHTML = p.specs
+          .map(
+            (s) =>
+              `<li class="flex items-center gap-2 text-zinc-600"><span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span> ${s}</li>`,
+          )
+          .join("");
+
+        // Gerando o link personalizado do WhatsApp direcionado ao Osmar
+        const message = `Olá Osmar! Gostaria de solicitar um orçamento para o seguinte item do catálogo:\n\n*Produto:* ${p.title}\n*Categoria:* ${p.category}\n\nPor favor, me informe as condições comerciais.`;
+        const encodedMessage = encodeURIComponent(message);
+
+        // Número oficial da empresa fornecido nos dados
+        document.getElementById("modal-whatsapp-btn").href =
+          `https://wa.me/556733889018?text=${encodedMessage}`;
+
+        const modal = document.getElementById("product-modal");
+        modal.classList.remove("hidden");
+        setTimeout(() => {
+          document.getElementById("modal-content").classList.remove("scale-95");
+          document.getElementById("modal-content").classList.add("scale-100");
+        }, 50);
+
+        lucide.createIcons();
+      }
+
+      function closeModal() {
+        document.getElementById("modal-content").classList.remove("scale-100");
+        document.getElementById("modal-content").classList.add("scale-95");
+        setTimeout(() => {
+          document.getElementById("product-modal").classList.add("hidden");
+        }, 200);
+      }
+
+      // Inicializar o protótipo
+      window.onload = () => {
+        renderProducts();
+      };
+    </script>
+  </body>
+</html>
